@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 class="title">Tic Tac Toe</h1>
+            <div class="mode-selector">
+                <button id="twoPlayerBtn" class="mode-btn active">Two Player</button>
+                <button id="computerBtn" class="mode-btn">vs Computer</button>
+            </div>
+        </header>
+
+        <main class="game-container">
+            <div class="game-info">
+                <div class="current-player">
+                    <span id="currentPlayerText">Player X's Turn</span>
+                </div>
+                <div class="score-board">
+                    <div class="score-item">
+                        <span class="score-label">Player X</span>
+                        <span id="scoreX" class="score-value">0</span>
+                    </div>
+                    <div class="score-item">
+                        <span class="score-label">Draws</span>
+                        <span id="scoreDraw" class="score-value">0</span>
+                    </div>
+                    <div class="score-item">
+                        <span class="score-label" id="playerOLabel">Player O</span>
+                        <span id="scoreO" class="score-value">0</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="game-board" id="gameBoard">
+                <div class="cell" data-index="0"></div>
+                <div class="cell" data-index="1"></div>
+                <div class="cell" data-index="2"></div>
+                <div class="cell" data-index="3"></div>
+                <div class="cell" data-index="4"></div>
+                <div class="cell" data-index="5"></div>
+                <div class="cell" data-index="6"></div>
+                <div class="cell" data-index="7"></div>
+                <div class="cell" data-index="8"></div>
+            </div>
+
+            <div class="game-controls">
+                <button id="resetBtn" class="control-btn">Reset Game</button>
+                <button id="newGameBtn" class="control-btn primary">New Game</button>
+            </div>
+        </main>
+
+        <div id="gameModal" class="modal">
+            <div class="modal-content">
+                <h2 id="modalTitle">Game Over</h2>
+                <p id="modalMessage">Player X Wins!</p>
+                <button id="modalCloseBtn" class="control-btn primary">Play Again</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
