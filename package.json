@@ -1,0 +1,17 @@
+{
+  "name": "tic-tac-toe-game",
+  "version": "1.0.0",
+  "description": "Modern responsive Tic Tac Toe game",
+  "main": "index.html",
+  "scripts": {
+    "dev": "npx vite --host",
+    "build": "npx vite build",
+    "preview": "npx vite preview"
+  },
+  "devDependencies": {
+    "vite": "^5.0.0"
+  },
+  "keywords": ["tic-tac-toe", "game", "javascript", "html", "css"],
+  "author": "",
+  "license": "MIT"
+}
